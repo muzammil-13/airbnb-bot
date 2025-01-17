@@ -1,6 +1,6 @@
 import OpenAI from "openai"
 const openAI = new OpenAI({
-    apiKey: `${process.env.apiKey}`,
+    apiKey: `${process.env.NEXT_PUBLIC_apiKey}`,
     baseURL: "https://api.aimlapi.com",
     dangerouslyAllowBrowser: true
 })
