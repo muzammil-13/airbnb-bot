@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.cardP {
+  padding: 4;
+  color:#ffffff
+}
