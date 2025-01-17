@@ -1,7 +1,6 @@
 import OpenAI from "openai"
-
 const openAI = new OpenAI({
-    apiKey: process.env.apiKey,
+    apiKey: `${process.env.apiKey}`,
     baseURL: "https://api.aimlapi.com",
     dangerouslyAllowBrowser: true
 })
@@ -20,6 +19,7 @@ class ActionProvider {
       createCustomMessage,
       ...rest
     ) {
+        
       this.createChatBotMessage = createChatBotMessage
       this.setState = setStateFunc
       this.createClientMessage = createClientMessage
