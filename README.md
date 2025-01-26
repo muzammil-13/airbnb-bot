@@ -27,7 +27,7 @@ An intelligent chatbot built with Next.js, React, and OpenAI's GPT API to provid
 1. Clone the repository:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/muzammil-13/airbnb-bot.git
 ```
 
 2. Install dependencies:
