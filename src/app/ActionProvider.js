@@ -1,4 +1,5 @@
 import OpenAI from "openai"
+
 const openAI = new OpenAI({
     apiKey: `${process.env.NEXT_PUBLIC_apiKey}`,
     baseURL: "https://api.aimlapi.com",
@@ -31,14 +32,15 @@ class ActionProvider {
         const chatCompletion = await openAI.chat.completions.create({
             model: "gpt-3.5-turbo",
             messages: [
-                {role:"system", content: "You are Credit Card Advisor. Give short and precise answers with exact card and bank name"},
+                {role: "system", content: "You are an Airbnb Support Assistant. Provide helpful, concise answers about bookings, hosting, policies, and general Airbnb support. Focus on being practical and specific."},
                 {role: "user", content: prompt}
             ],
-            temperature: 0.5,
-            max_tokens: 50
+            temperature: 0.7,
+            max_tokens: 150
         });
         return chatCompletion.choices[0].message.content
     }
+    
 
     timer = ms => new Promise(res => setTimeout(res, ms));
     

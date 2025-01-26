@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Airbnb Support Assistant Chatbot
 
-## Getting Started
+An intelligent chatbot built with Next.js, React, and OpenAI's GPT API to provide instant Airbnb support assistance.
 
-First, run the development server:
+## Features
+
+- Real-time chat interface using react-chatbot-kit
+- AI-powered responses using GPT-3.5-turbo
+- Instant help with:
+  - Booking processes
+  - Hosting guidelines
+  - Airbnb policies
+  - General platform support
+- Clean, modern UI with Geist typography
+- Natural conversation flow with timed responses
+
+## Tech Stack
+
+- Next.js 13+ (React framework)
+- OpenAI GPT API
+- react-chatbot-kit
+- Geist Font
+- Environment variables for secure API handling
+
+## Quick Start
+
+1. Clone the repository:
+
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create `.env.local` and add your OpenAI API key:
+
+```bash
+NEXT_PUBLIC_apiKey=your-api-key-here
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](command:_cody.vscode.open?%22http%3A%2F%2Flocalhost%3A3000%22) to view the chatbot
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The chatbot provides instant responses to queries about:
 
-## Learn More
+* Booking procedures and issues
+* Host guidelines and best practices
+* Platform policies and rules
+* Account management
+* Payment processes
+* Safety and security measures
 
-To learn more about Next.js, take a look at the following resources:
+## Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project structure:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* `src/app/components/ChatComponent.js` - Main chat interface
+* `src/app/ActionProvider.js` - Handles AI integration and responses
+* `src/app/MessageParser.js` - Processes user inputs
+* `src/app/config.js` - Chatbot configuration
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy easily with [Vercel](command:_cody.vscode.open?%22https%3A%2F%2Fvercel.com%22):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push to GitHub
+2. Import to Vercel
+3. Add environment variables
+4. Deploy
+
+## Contributing
+
+Contributions welcome! Feel free to submit PRs for:
+
+* New features
+* Bug fixes
+* Documentation improvements
+* UI enhancements
+
+## License
+
+MIT License
