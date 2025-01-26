@@ -48,7 +48,7 @@ NEXT_PUBLIC_apiKey=your-api-key-here
 npm run dev
 ```
 
-5. Open [http://localhost:3000](command:_cody.vscode.open?%22http%3A%2F%2Flocalhost%3A3000%22) to view the chatbot
+5. Open [http://localhost:3000](http://localhost:3000) to view the chatbot
 
 ## Usage
 
@@ -72,7 +72,7 @@ The project structure:
 
 ## Deployment
 
-Deploy easily with [Vercel](command:_cody.vscode.open?%22https%3A%2F%2Fvercel.com%22):
+Deploy easily with [Vercel](#null):
 
 1. Push to GitHub
 2. Import to Vercel
@@ -90,4 +90,4 @@ Contributions welcome! Feel free to submit PRs for:
 
 ## License
 
-MIT License
+[MIT License](LICENSE)

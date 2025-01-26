@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "airbnb-bot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -32,7 +32,7 @@
     "chatbot",
     "chatgpt"
   ],
-  "author": "",
+  "author": "muzammil-13",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/muzammil-13/airbnb-bot/issues"
