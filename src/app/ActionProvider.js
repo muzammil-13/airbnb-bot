@@ -1,10 +1,11 @@
 import OpenAI from "openai"
 
 const openAI = new OpenAI({
-    apiKey: `${process.env.NEXT_PUBLIC_apiKey}`,
+    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
     baseURL: "https://api.aimlapi.com",
     dangerouslyAllowBrowser: true
 })
+
 class ActionProvider {
     createChatBotMessage
     setState
